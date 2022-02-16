@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+.general {
+  overflow: hidden;
+  color: white;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+.general .img-1 {
+  position: relative;
+  height: 100vh;
+  width: 50%;
+  clip-path: polygon(0 0, 75% 0, 100% 100%, 0 100%);
+
+  animation: img 5s linear infinite;
+}
+
+.general .img-2 {
+  margin-left: -150px;
+  position: relative;
+  height: 100vh;
+  width: 50%;
+  clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%);
+  animation: imgmid 5s linear infinite;
+}
+
+.general .img-3 {
+  margin-left: -150px;
+  position: relative;
+  height: 100vh;
+  width: 50%;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 25% 100%);
+
+  animation: imglast 5s linear infinite;
+}
+.text h1 {
+  font-size: 110px;
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  text-transform: uppercase;
+  animation: text 5s linear infinite;
+}
+@keyframes text {
+  0% {
+    transform: scale(1);
+    opacity: 0;
+  }
+
+  8% {
+    opacity: 0;
+  }
+
+  13% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  87% {
+    opacity: 0;
+  }
+
+  92% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1.3);
+    opacity: 0;
+  }
+}
+@keyframes img {
+  0% {
+    transform: translateX(5);
+    opacity: 0;
+  }
+
+  8% {
+    opacity: 0;
+  }
+
+  13% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  87% {
+    opacity: 0;
+  }
+
+  92% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(-5%);
+    opacity: 0;
+  }
+}
+@keyframes imglast {
+  0% {
+    transform: translateX(-5);
+    opacity: 0;
+  }
+
+  8% {
+    opacity: 0;
+  }
+
+  13% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  87% {
+    opacity: 0;
+  }
+
+  92% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(5%);
+    opacity: 0;
+  }
+}
+@keyframes imgmid {
+  0% {
+    transform: scale(1);
+    opacity: 0;
+  }
+
+  8% {
+    opacity: 0;
+  }
+
+  13% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  87% {
+    opacity: 0;
+  }
+
+  92% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1.1);
+    opacity: 0;
+  }
+}
+
+/* section {
+  height: 100vh;
+  display: flex;
+  scroll-snap-align: start;
+}
+.container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+} */
+@media screen and (max-width: 992px) {
+  body {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  body {
+    display: none;
+  }
+}
